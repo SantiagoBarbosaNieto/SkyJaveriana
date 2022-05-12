@@ -1,0 +1,63 @@
+<resources>
+    <string name="app_name">SkyJaveriana</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+
+    <!-- GENERAL -->
+    <string name="cancelar">Cancelar</string>
+    <string name="continuar">Continuar</string>
+    <string name="aceptar">Aceptar</string>
+    <string name="atras">Atras</string>
+    <string name="eliminar">Eliminar</string>
+    <string name="cargar">Crargar</string>
+
+    <!-- MENSAJES DE ERROR -->
+    <string name="err_email_vacio">Debe ingresar un email</string>
+    <string name="err_nombre_vacio">Debe ingresar un nombre</string>
+    <string name="err_pass_vacio">Debe ingresar una contraseña</string>
+    <string name="err_pass_corto">La contraseña debe tener minimo 6 caracteres</string>
+    <string name="err_resetPass">Ocurrió un error. Intente de nuevo. Error: </string>
+
+    <!-- MENSJAES DE EXITO -->
+    <string name="ex_login">Login exitoso</string>
+    <string name="ex_registro">Usuario registrado</string>
+    <string name="ex_resetPass">Email de recuperacion de contraseña enviado con éxito</string>
+    <string name="ex_salvarRuta">Ruta salvada exitosamente</string>
+
+    <!-- ACTIVITY LOGIN/REGISTER -->
+    <string name="title_login">Inicio de Sesión</string>
+    <string name="title_register">Registrarse</string>
+    <string name="input_nombre">Nombre</string>
+    <string name="input_email">Email</string>
+    <string name="input_pass">Contraseña</string>
+    <string name="but_iniciar_login">Iniciar</string>
+    <string name="but_mostrar_pass">Mostrar</string>
+    <string name="but_recuperar_login">Olvidaste tu contraseña?</string>
+    <string name="but_crear_cuenta_login">No tienes cuenta? Crea una</string>
+    <string name="but_ir_login">Login</string>
+    <string name="but_registrarse">Registrarse</string>
+    <string name="check_tyc">Estoy de acuerdo con los términos y condiciones</string>
+    <string name="check_promociones">Me gustaría recibir sus revistas y otra información promocional</string>
+
+    <string name="input_nombre_empresa">Nombre Empresa</string>
+    <string name="input_nombre_encargado">Nombre Encargado Principal</string>
+    <string name="input_email_empresarial">Email Empresarial</string>
+    <string name="txt_irARegistroEmpresa">Registrase como empresa</string>
+
+    <!-- ACTIVITY RESET PASSWORD -->
+    <string name="title_resetPassword">Cambia tu contraseña</string>
+    <string name="txt_info_resetPassword">Ingresa el email de tu cuenta. Si coincide con un usuario registrado enviaremos un mail para reiniciar tu contraseña.</string>
+    <string name="btn_Enviar">Enviar</string>
+
+    <!-- ATIVITY VERIFICAR CUENTA -->
+    <string name="title_verificarCueta">Verificar Cuenta</string>
+    <string name="txt_info_verificarCuenta">Te hemos enviado un email a:</string>
+    <string name="txt_info2_verificarCuenta">Dentro del email, haz click al link para activar tu cuenta. Una vez hayas hecho esto esto podrás hacer login en tu cuenta.</string>
+    <string name="btn_reenviar_verificarCuenta">Reenviar</string>
+    <string name="msg_yaVerificado_verificarCuenta">Esta cuenta ya fue verificada</string>
+    <string name="msg_noVerificado">Esta cuenta no ha sido verificada</string>
+    <string name="msg_emailEnviado_verificarCuenta">Email de verificacion enviado</string>
+
+
+</resources>

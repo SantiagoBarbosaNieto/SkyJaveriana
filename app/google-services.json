@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "1012134742090",
+    "project_id": "skyjaveriana",
+    "storage_bucket": "skyjaveriana.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1012134742090:android:ccf8cfff3eb7a8becbfeb3",
+        "android_client_info": {
+          "package_name": "co.edu.javeriana.innovacion.skyjaveriana"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1012134742090-oofulbs5ba6v6brdgtm2734plki0mlui.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAb7lvlzFQ-J4wsVZcQFqJcNOaMxR83v9I"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1012134742090-oofulbs5ba6v6brdgtm2734plki0mlui.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
