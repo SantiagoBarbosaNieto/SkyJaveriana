@@ -138,7 +138,7 @@ public class RegisterAdmin extends AppCompatActivity {
                     userId = fAuth.getCurrentUser().getUid();
                     DocumentReference documentReference = fDb.collection("users").document(userId);
                     Map<String, Object> user = new HashMap<>();
-                    user.put(FirestoreDB_Keys.EMPRESARIAL.toString(), true);
+                    user.put(FirestoreDB_Keys.ADMIN.toString(), true);
                     user.put(FirestoreDB_Keys.NOMBRE_EMPRESA.toString(), nombreEmpresa);
                     user.put(FirestoreDB_Keys.NOMBRE_ENCARGADO.toString(), nombreEncargado);
                     user.put(FirestoreDB_Keys.EMAIL.toString(), email);

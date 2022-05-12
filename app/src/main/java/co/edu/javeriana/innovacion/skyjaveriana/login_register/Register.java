@@ -20,7 +20,6 @@ import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
-import com.google.firebase.firestore.CollectionReference;
 import com.google.firebase.firestore.DocumentReference;
 import com.google.firebase.firestore.FirebaseFirestore;
 
@@ -141,7 +140,7 @@ public class Register extends AppCompatActivity {
                     userId = fAuth.getCurrentUser().getUid();
                     DocumentReference documentReference = fDb.collection(FirestoreDB_Keys.USERS.toString()).document(userId);
                     Map<String, Object> user = new HashMap<>();
-                    user.put(FirestoreDB_Keys.EMPRESARIAL.toString(), false);
+                    user.put(FirestoreDB_Keys.ADMIN.toString(), false);
                     user.put(FirestoreDB_Keys.NOMBRE.toString(), nombre);
                     user.put(FirestoreDB_Keys.EMAIL.toString(), email);
                     user.put(FirestoreDB_Keys.PROMOS.toString(), promo);

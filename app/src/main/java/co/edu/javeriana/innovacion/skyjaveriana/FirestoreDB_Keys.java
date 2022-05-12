@@ -4,7 +4,7 @@ import java.io.CharArrayWriter;
 
 //Para no tener errores a la hora de llamar una key para acceder a un valor guardado en firestore
 public enum FirestoreDB_Keys {
-    EMPRESARIAL,
+    ADMIN,
     EMAIL,
     NOMBRE_EMPRESA,
     NOMBRE,

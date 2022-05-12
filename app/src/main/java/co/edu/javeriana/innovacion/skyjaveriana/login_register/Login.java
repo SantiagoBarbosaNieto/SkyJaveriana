@@ -128,7 +128,7 @@ public class Login extends AppCompatActivity {
                     documentReference.addSnapshotListener(Login.this, new EventListener<DocumentSnapshot>() {
                         @Override
                         public void onEvent(@Nullable DocumentSnapshot value, @Nullable FirebaseFirestoreException error) {
-                            boolean empresarial = value.getBoolean(FirestoreDB_Keys.EMPRESARIAL.toString());
+                            boolean empresarial = value.getBoolean(FirestoreDB_Keys.ADMIN.toString());
                             if(empresarial)
                             {
                                 //TODO mandar a vista empresarial
