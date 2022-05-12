@@ -6,16 +6,11 @@ import java.io.CharArrayWriter;
 public enum FirestoreDB_Keys {
     ADMIN,
     EMAIL,
-    NOMBRE_EMPRESA,
     NOMBRE,
-    NOMBRE_ENCARGADO,
     PROMOS,
-    PUNTO_RUTA,
-    RUTAS,
     USERS,
     FRASE,
     AMIGOS,
     VIVE,
-    DISTANCIA,
     FOTO;
 }

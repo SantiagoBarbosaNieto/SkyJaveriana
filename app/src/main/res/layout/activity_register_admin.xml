@@ -15,14 +15,14 @@
         android:text="@string/but_ir_login"
         android:textColor="@color/green_principal"
         android:textSize="16sp"
-        app:layout_constraintBottom_toBottomOf="@+id/title_register_empresa"
+        app:layout_constraintBottom_toBottomOf="@+id/title_register_admin"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.466"
         app:layout_constraintStart_toEndOf="@+id/title_register"
-        app:layout_constraintTop_toTopOf="@+id/title_register_empresa" />
+        app:layout_constraintTop_toTopOf="@+id/title_register_admin" />
 
     <TextView
-        android:id="@+id/title_register_empresa"
+        android:id="@+id/title_register_admin"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="44dp"
@@ -48,38 +48,22 @@
         tools:visibility="invisible" />
 
     <EditText
-        android:id="@+id/etxt_nombreEmpresa_registerAdmin"
-        style="@android:style/Widget.DeviceDefault.EditText"
-        android:layout_width="0dp"
-        android:layout_height="50dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="16dp"
-        android:layout_marginEnd="16dp"
-        android:autofillHints=""
-        android:backgroundTint="#D1CDCD"
-        android:ems="10"
-        android:hint="@string/input_nombre_empresa"
-        android:inputType="textEmailAddress"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/title_register_empresa" />
-
-    <EditText
         android:id="@+id/etxt_nombreEncargado_registerAdmin"
         style="@android:style/Widget.DeviceDefault.EditText"
         android:layout_width="0dp"
         android:layout_height="50dp"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="4dp"
         android:layout_marginEnd="16dp"
         android:autofillHints=""
         android:backgroundTint="#D1CDCD"
         android:ems="10"
-        android:hint="@string/input_nombre_encargado"
+        android:hint="@string/input_nombre"
         android:inputType="textEmailAddress"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/etxt_nombreEmpresa_registerAdmin" />
+        app:layout_constraintTop_toBottomOf="@+id/title_register_admin" />
 
     <EditText
         android:id="@+id/etxt_email_registerAdmin"
@@ -92,7 +76,7 @@
         android:autofillHints=""
         android:backgroundTint="#D1CDCD"
         android:ems="10"
-        android:hint="@string/input_email_empresarial"
+        android:hint="@string/input_email"
         android:inputType="textEmailAddress"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -150,14 +134,15 @@
         android:layout_marginEnd="32dp"
         android:backgroundTint="@color/green_principal"
         android:text="@string/but_registrarse"
-        app:layout_constraintBottom_toTopOf="@+id/ic_bicicleta_registerEmpresa"
+        app:layout_constraintBottom_toTopOf="@+id/ic_registerAdmin"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/ch_tyc_registerAdmin"
-        app:layout_constraintVertical_bias="0.25" />
+        app:layout_constraintVertical_bias="0.489" />
 
     <View
-        android:id="@+id/ic_bicicleta_registerEmpresa"
+        android:id="@+id/ic_registerAdmin"
         android:layout_width="152dp"
         android:layout_height="153dp"
         android:layout_alignParentLeft="true"

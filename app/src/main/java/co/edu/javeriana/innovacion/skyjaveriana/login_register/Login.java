@@ -128,11 +128,11 @@ public class Login extends AppCompatActivity {
                     documentReference.addSnapshotListener(Login.this, new EventListener<DocumentSnapshot>() {
                         @Override
                         public void onEvent(@Nullable DocumentSnapshot value, @Nullable FirebaseFirestoreException error) {
-                            boolean empresarial = value.getBoolean(FirestoreDB_Keys.ADMIN.toString());
-                            if(empresarial)
+                            boolean admin = value.getBoolean(FirestoreDB_Keys.ADMIN.toString());
+                            if(admin)
                             {
-                                //TODO mandar a vista empresarial
-                                Toast.makeText(Login.this, "Login exitoso.. Vista empresarial no implementada", Toast.LENGTH_SHORT).show();
+                                //TODO mandar a vista admin
+                                Toast.makeText(Login.this, "Login exitoso.. Vista admin no implementada", Toast.LENGTH_SHORT).show();
                             }
                             else
                             {

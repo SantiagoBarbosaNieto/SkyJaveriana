@@ -97,7 +97,7 @@ public class RegisterAdmin extends AppCompatActivity {
     private void register()
     {
         String nombreEmpresa = etxt_nombreEmpresa.getText().toString();
-        String nombreEncargado = etxt_nombreEncargado.getText().toString();
+        String nombre = etxt_nombreEncargado.getText().toString();
         String email = etxt_email.getText().toString();
         String pass = etxt_pass.getText().toString();
 
@@ -108,7 +108,7 @@ public class RegisterAdmin extends AppCompatActivity {
             err = true;
             etxt_nombreEmpresa.setError(getString(R.string.err_nombre_vacio));
         }
-        if(TextUtils.isEmpty(nombreEncargado)) {
+        if(TextUtils.isEmpty(nombre)) {
             err = true;
             etxt_nombreEncargado.setError(getString(R.string.err_nombre_vacio));
         }
@@ -139,8 +139,7 @@ public class RegisterAdmin extends AppCompatActivity {
                     DocumentReference documentReference = fDb.collection("users").document(userId);
                     Map<String, Object> user = new HashMap<>();
                     user.put(FirestoreDB_Keys.ADMIN.toString(), true);
-                    user.put(FirestoreDB_Keys.NOMBRE_EMPRESA.toString(), nombreEmpresa);
-                    user.put(FirestoreDB_Keys.NOMBRE_ENCARGADO.toString(), nombreEncargado);
+                    user.put(FirestoreDB_Keys.NOMBRE.toString(), nombre);
                     user.put(FirestoreDB_Keys.EMAIL.toString(), email);
                     user.put(FirestoreDB_Keys.PROMOS.toString(), promo);
 
