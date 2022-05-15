@@ -25,7 +25,8 @@ import com.google.firebase.firestore.FirebaseFirestore;
 import com.google.firebase.firestore.FirebaseFirestoreException;
 
 import co.edu.javeriana.innovacion.skyjaveriana.FirestoreDB_Keys;
-import co.edu.javeriana.innovacion.skyjaveriana.MainActivity;
+import co.edu.javeriana.innovacion.skyjaveriana.MainActivityAdmin;
+import co.edu.javeriana.innovacion.skyjaveriana.MainActivityUsuario;
 import co.edu.javeriana.innovacion.skyjaveriana.R;
 
 public class Login extends AppCompatActivity {
@@ -129,17 +130,17 @@ public class Login extends AppCompatActivity {
                         @Override
                         public void onEvent(@Nullable DocumentSnapshot value, @Nullable FirebaseFirestoreException error) {
                             boolean admin = value.getBoolean(FirestoreDB_Keys.ADMIN.toString());
+                            Toast.makeText(Login.this, getString(R.string.ex_login), Toast.LENGTH_SHORT).show();
+                            Intent intent;
                             if(admin)
                             {
-                                //TODO mandar a vista admin
-                                Toast.makeText(Login.this, "Login exitoso.. Vista admin no implementada", Toast.LENGTH_SHORT).show();
+                                intent = new Intent(Login.this, MainActivityAdmin.class);
                             }
                             else
                             {
-                                Toast.makeText(Login.this, getString(R.string.ex_login), Toast.LENGTH_SHORT).show();
-                                Intent intent = new Intent(Login.this, MainActivity.class);
-                                startActivity(intent);
+                                intent = new Intent(Login.this, MainActivityUsuario.class);
                             }
+                            startActivity(intent);
                         }
                     });
 

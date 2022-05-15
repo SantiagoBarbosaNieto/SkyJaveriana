@@ -44,6 +44,7 @@
     <string name="input_nombre_encargado">Nombre Encargado Principal</string>
     <string name="input_email_empresarial">Email Empresarial</string>
     <string name="txt_irARegistroEmpresa">Registrase como empresa</string>
+    <string name="etxt_nombreEmpresa_registerAdmin">Nombre empresa</string>
 
     <!-- ACTIVITY RESET PASSWORD -->
     <string name="title_resetPassword">Cambia tu contraseña</string>
@@ -59,5 +60,9 @@
     <string name="msg_noVerificado">Esta cuenta no ha sido verificada</string>
     <string name="msg_emailEnviado_verificarCuenta">Email de verificacion enviado</string>
 
+
+    <!-- FRAGMENT ASCENSORES -->
+    <string name="title_ascnsores">Ascensores</string>
+    <string name="title_activity_main_admin">MainActivityAdmin</string>
 
 </resources>

@@ -27,7 +27,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 import co.edu.javeriana.innovacion.skyjaveriana.FirestoreDB_Keys;
-import co.edu.javeriana.innovacion.skyjaveriana.MainActivity;
+import co.edu.javeriana.innovacion.skyjaveriana.MainActivityUsuario;
 import co.edu.javeriana.innovacion.skyjaveriana.R;
 
 public class RegisterAdmin extends AppCompatActivity {
@@ -46,7 +46,6 @@ public class RegisterAdmin extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_register_admin);
 
-        etxt_nombreEmpresa = findViewById(R.id.etxt_nombreEmpresa_registerAdmin);
         etxt_nombreEncargado = findViewById(R.id.etxt_nombreEncargado_registerAdmin);
         etxt_email = findViewById(R.id.etxt_email_registerAdmin);
         etxt_pass = findViewById(R.id.etxt_pass_registerAdmin);
@@ -96,7 +95,6 @@ public class RegisterAdmin extends AppCompatActivity {
 
     private void register()
     {
-        String nombreEmpresa = etxt_nombreEmpresa.getText().toString();
         String nombre = etxt_nombreEncargado.getText().toString();
         String email = etxt_email.getText().toString();
         String pass = etxt_pass.getText().toString();
@@ -104,10 +102,6 @@ public class RegisterAdmin extends AppCompatActivity {
         boolean promo = ch_promo.isChecked();
 
         boolean err = false;
-        if(TextUtils.isEmpty(nombreEmpresa)) {
-            err = true;
-            etxt_nombreEmpresa.setError(getString(R.string.err_nombre_vacio));
-        }
         if(TextUtils.isEmpty(nombre)) {
             err = true;
             etxt_nombreEncargado.setError(getString(R.string.err_nombre_vacio));
@@ -136,7 +130,7 @@ public class RegisterAdmin extends AppCompatActivity {
                 if(task.isSuccessful())
                 {
                     userId = fAuth.getCurrentUser().getUid();
-                    DocumentReference documentReference = fDb.collection("users").document(userId);
+                    DocumentReference documentReference = fDb.collection(FirestoreDB_Keys.USERS.toString()).document(userId);
                     Map<String, Object> user = new HashMap<>();
                     user.put(FirestoreDB_Keys.ADMIN.toString(), true);
                     user.put(FirestoreDB_Keys.NOMBRE.toString(), nombre);
@@ -148,7 +142,7 @@ public class RegisterAdmin extends AppCompatActivity {
                         public void onSuccess(Void unused) {
                             progressBar.setVisibility(View.INVISIBLE);
                             Toast.makeText(RegisterAdmin.this, getString(R.string.ex_registro), Toast.LENGTH_SHORT).show();
-                            Intent intent = new Intent(RegisterAdmin.this, MainActivity.class);
+                            Intent intent = new Intent(RegisterAdmin.this, VerificarCuenta.class);
                             intent.putExtra("email", email);
                             intent.putExtra("pass", pass);
                             startActivity(intent);

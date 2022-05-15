@@ -81,7 +81,7 @@ public class Register extends AppCompatActivity {
         txt_registroEmpresa.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                irARegistroEmpresa();
+                irARegistroAdmin();
             }
         });
 
@@ -182,7 +182,7 @@ public class Register extends AppCompatActivity {
         startActivity(intent);
     }
 
-    private void irARegistroEmpresa()
+    private void irARegistroAdmin()
     {
         Intent intent = new Intent(Register.this, RegisterAdmin.class);
         startActivity(intent);
