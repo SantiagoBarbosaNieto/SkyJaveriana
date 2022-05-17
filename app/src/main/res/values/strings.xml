@@ -40,11 +40,11 @@
     <string name="check_tyc">Estoy de acuerdo con los términos y condiciones</string>
     <string name="check_promociones">Me gustaría recibir sus revistas y otra información promocional</string>
 
-    <string name="input_nombre_empresa">Nombre Empresa</string>
+    <string name="input_nombre_Admin">Nombre</string>
     <string name="input_nombre_encargado">Nombre Encargado Principal</string>
-    <string name="input_email_empresarial">Email Empresarial</string>
-    <string name="txt_irARegistroEmpresa">Registrase como empresa</string>
-    <string name="etxt_nombreEmpresa_registerAdmin">Nombre empresa</string>
+    <string name="input_email_administrador">Email</string>
+    <string name="txt_irARegistroAdmin">Registrase como admin</string>
+    <string name="etxt_nombreEmpresa_registerAdmin">Nombre</string>
 
     <!-- ACTIVITY RESET PASSWORD -->
     <string name="title_resetPassword">Cambia tu contraseña</string>

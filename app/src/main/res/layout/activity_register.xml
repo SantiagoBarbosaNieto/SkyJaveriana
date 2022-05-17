@@ -10,7 +10,7 @@
         android:id="@+id/txt_irRegistroEmpresa_register"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/txt_irARegistroEmpresa"
+        android:text="@string/txt_irARegistroAdmin"
         android:textColor="@color/green_principal"
         app:layout_constraintBottom_toTopOf="@+id/ic_bicicleta_register"
         app:layout_constraintEnd_toEndOf="parent"
