@@ -7,8 +7,8 @@
     <color name="teal_700">#FF018786</color>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
-    <color name="green_principal">#0BC212</color>
-    <color name="img_selected">#3B4BCE64</color>
-    <color name="rutaFaltante">#1ECF44</color>
-    <color name="rutaEstatica">#9C000000</color>
+    <color name="principal">#0BC212</color>
+    <color name="boxBackground">#65D3D2FB</color>
+    <color name="boxSelected">#AE7A20</color>
+    <color name="textBox">#28728A57</color>
 </resources>
