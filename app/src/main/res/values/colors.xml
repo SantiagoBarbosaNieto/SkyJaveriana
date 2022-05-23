@@ -8,7 +8,7 @@
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
     <color name="principal">#0BC212</color>
-    <color name="boxBackground">#65D3D2FB</color>
+    <color name="boxBackground">#6571C875</color>
     <color name="boxSelected">#AE7A20</color>
     <color name="textBox">#28728A57</color>
 </resources>
