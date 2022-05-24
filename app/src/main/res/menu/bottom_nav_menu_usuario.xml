@@ -3,13 +3,13 @@
 
     <item
         android:id="@+id/navigation_ascensores"
-        android:icon="@drawable/ic_home_black_24dp"
+        android:icon="@drawable/elevator"
         android:title="@string/title_ascnsores" />
 
     <item
-        android:id="@+id/navigation_dashboard"
-        android:icon="@drawable/ic_dashboard_black_24dp"
-        android:title="@string/title_dashboard" />
+        android:id="@+id/navigation_ruta"
+        android:icon="@drawable/ic_routes"
+        android:title="@string/title_ruta" />
 
     <item
         android:id="@+id/navigation_notifications"

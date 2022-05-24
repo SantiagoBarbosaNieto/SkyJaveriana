@@ -64,5 +64,10 @@
     <!-- FRAGMENT ASCENSORES -->
     <string name="title_ascnsores">Ascensores</string>
     <string name="title_activity_main_admin">MainActivityAdmin</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <!-- FRAGMENT RUTA -->
+    <string name="title_ruta">Ruta</string>
 
 </resources>

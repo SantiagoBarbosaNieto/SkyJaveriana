@@ -12,10 +12,10 @@
         tools:layout="@layout/fragment_ascensores" />
 
     <fragment
-        android:id="@+id/navigation_dashboard"
-        android:name="co.edu.javeriana.innovacion.skyjaveriana.ui.dashboard.DashboardFragment"
-        android:label="@string/title_dashboard"
-        tools:layout="@layout/fragment_dashboard" />
+        android:id="@+id/navigation_ruta"
+        android:name="co.edu.javeriana.innovacion.skyjaveriana.ui.ruta.RutaFragment"
+        android:label="@string/title_ruta"
+        tools:layout="@layout/fragment_ruta" />
 
     <fragment
         android:id="@+id/navigation_notifications"
