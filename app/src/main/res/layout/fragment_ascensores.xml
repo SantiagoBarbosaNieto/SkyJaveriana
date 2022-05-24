@@ -348,7 +348,7 @@
                     android:layout_height="wrap_content"
                     android:background="@color/textBox"
                     android:paddingLeft="10dp"
-                    android:text="6"
+                    android:text="8"
                     android:textSize="16sp"
                     app:layout_constraintEnd_toEndOf="@+id/t2"
                     app:layout_constraintStart_toStartOf="@+id/t2"

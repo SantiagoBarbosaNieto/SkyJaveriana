@@ -3,13 +3,13 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/mobile_navigation"
-    app:startDestination="@+id/navigation_home">
+    app:startDestination="@+id/navigation_stats">
 
     <fragment
-        android:id="@+id/navigation_home"
-        android:name="co.edu.javeriana.innovacion.skyjaveriana.ui.home.HomeFragment"
+        android:id="@+id/navigation_stats"
+        android:name="co.edu.javeriana.innovacion.skyjaveriana.ui.stats.StatsFragment"
         android:label="@string/title_home"
-        tools:layout="@layout/fragment_home" />
+        tools:layout="@layout/fragment_stats" />
 
     <fragment
         android:id="@+id/navigation_dashboard"

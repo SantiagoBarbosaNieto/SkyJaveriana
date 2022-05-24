@@ -95,7 +95,7 @@ public class RutaFragment extends Fragment {
         cont.setVisibility(View.VISIBLE);
 
         int as2O = 2;
-        int as2D = 6;
+        int as2D = 8;
         int as3O = 3;
         int as3D = 12;
 
@@ -120,6 +120,25 @@ public class RutaFragment extends Fragment {
                 img_ascensor3.setBackgroundTintList(getResources().getColorStateList(R.color.black, getActivity().getTheme()));
                 break;
             case 2:
+                if(Math.abs(or - as2D) + Math.abs(des - as2O) > Math.abs(or-as2O)+ Math.abs(des - as2D))
+                {
+                    pathAO = as2O;
+                    pathAD = as2D;
+                    if (des != as2D) {
+                        pathEO = as2D;
+                        pathED = des;
+                    }
+                }
+                else
+                {
+                    pathAO = as2D;
+                    pathAD = as2O;
+                    if(des != as2O) {
+                        pathEO = as2O;
+                        pathED = des;
+                    }
+                }
+                /*
                 if(or == as2O || or == as2D)
                 {
                     if(or == as2O) {
@@ -159,13 +178,32 @@ public class RutaFragment extends Fragment {
                             pathED = des;
                         }
                     }
-                }
+                }*/
                 img_ascensor1.setBackgroundTintList(getResources().getColorStateList(R.color.black, getActivity().getTheme()));
                 img_ascensor2.setBackgroundTintList(getResources().getColorStateList(R.color.boxSelected, getActivity().getTheme()));
                 img_ascensor3.setBackgroundTintList(getResources().getColorStateList(R.color.black, getActivity().getTheme()));
                 break;
             case 3:
-                if(or == as3O || or == as3D)
+                if(Math.abs(or - as3D) + Math.abs(des - as3O)> Math.abs(or-as3O) + Math.abs(des-as3D))
+                {
+                    pathAO = as3O;
+                    pathAD = as3D;
+                    if (des != as3D) {
+                        pathEO = as3D;
+                        pathED = des;
+                    }
+                }
+                else
+                {
+                    pathAO = as3D;
+                    pathAD = as3O;
+                    if(des != as3O) {
+                        pathEO = as3O;
+                        pathED = des;
+                    }
+                }
+                /*
+                 if(or == as3O || or == as3D)
                 {
                     if(or == as3O) {
                         pathAO = as3O;
@@ -205,6 +243,7 @@ public class RutaFragment extends Fragment {
                         }
                     }
                 }
+                 */
                 img_ascensor1.setBackgroundTintList(getResources().getColorStateList(R.color.black, getActivity().getTheme()));
                 img_ascensor2.setBackgroundTintList(getResources().getColorStateList(R.color.black, getActivity().getTheme()));
                 img_ascensor3.setBackgroundTintList(getResources().getColorStateList(R.color.boxSelected, getActivity().getTheme()));
