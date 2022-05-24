@@ -6,34 +6,20 @@
     android:layout_height="match_parent"
     tools:context=".Logn">
 
-    <TextView
-        android:id="@+id/title_login"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="56dp"
-        android:fontFamily="sans-serif"
-        android:text="@string/title_login"
-        android:textSize="34sp"
-        android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
     <View
         android:id="@+id/ic_login"
-        android:layout_width="152dp"
-        android:layout_height="153dp"
+        android:layout_width="281dp"
+        android:layout_height="184dp"
         android:layout_alignParentLeft="true"
         android:layout_alignParentTop="true"
         android:layout_alignParentRight="true"
         android:layout_alignParentBottom="true"
-        android:layout_marginTop="4dp"
-        android:background="@drawable/ic_profile"
+        android:layout_marginTop="56dp"
+        android:background="@drawable/logo"
         android:backgroundTint="@color/principal"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/title_login" />
+        app:layout_constraintTop_toTopOf="@+id/progressBar_login" />
 
     <EditText
         android:id="@+id/etxt_pass_login"
@@ -72,7 +58,7 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="24dp"
+        android:layout_marginTop="75dp"
         android:layout_marginEnd="16dp"
         android:ems="10"
         android:hint="@string/input_email"
